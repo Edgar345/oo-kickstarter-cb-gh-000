@@ -3,6 +3,6 @@ class Project
 
   def initialize name
     @name = name
-    @backed_projects = []
+    @backers = []
   end
 end
