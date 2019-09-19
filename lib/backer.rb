@@ -7,7 +7,7 @@ class Backer
   end
 
   def back_project project
-    if @backed_projects.include project
+    if @backed_projects.include? project
       return nil
     end
     @backed_projects << project
