@@ -12,9 +12,8 @@ class Backer
     # end
 
     if !@backed_projects.include?(project)
-
+      @backed_projects << project
+      project.add_backer self
     end
-    @backed_projects << project
-    project.add_backer self
   end
 end
