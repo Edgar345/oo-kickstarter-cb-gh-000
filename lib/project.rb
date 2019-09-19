@@ -7,7 +7,7 @@ class Project
   end
 
   def add_backer backer
-    if @backers.include? project
+    if @backers.include? backer
       return nil
     end
     @backers << backer
