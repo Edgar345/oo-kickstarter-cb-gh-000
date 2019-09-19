@@ -10,6 +10,10 @@ class Backer
     # if @backed_projects.include? project
     #   return nil
     # end
+
+    if !@backed_projects.include?(project)
+
+    end
     @backed_projects << project
     project.add_backer self
   end
